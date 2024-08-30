@@ -1,0 +1,20 @@
+2024-07-10 11:38:02,741 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 11:38:02,742 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 11:38:02,743 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 11:38:04,768 - src.utils.logger - INFO - Redis DB is being flushed
+2024-07-10 16:36:03,694 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 16:36:03,695 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 16:36:03,695 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 16:36:05,751 - src.utils.logger - INFO - Redis DB is being flushed
+2024-07-10 16:36:52,202 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 16:36:52,203 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 16:36:52,204 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 16:36:54,228 - src.utils.logger - INFO - Redis DB is being flushed
+2024-07-10 17:15:55,268 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 17:15:55,268 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 17:15:55,269 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 17:15:57,318 - src.utils.logger - INFO - Redis DB is being flushed
+2024-07-10 17:16:35,177 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 17:16:35,178 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 17:16:35,178 - src.utils.logger - INFO - Connected to Redis
+2024-07-10 17:16:37,229 - src.utils.logger - INFO - Redis DB is being flushed

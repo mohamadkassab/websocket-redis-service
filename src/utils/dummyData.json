@@ -1,0 +1,24 @@
+[
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "coverage_server_id" : 1,
+        "manager_login" : 1105,
+        "coverage_id": 19,
+        "symbol" : "XAUUSD",
+        "type" : "buy",
+        "cov" : "cov"
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "coverage_server_id" : 1,
+        "manager_login" : 1105,
+        "coverage_id": 19,
+        "symbol" : "EURUSD",
+        "type" : "buy",
+        "cov" : "cov"
+    }
+
+
+]

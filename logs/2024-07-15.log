@@ -1,0 +1,4 @@
+2024-07-15 11:36:16,771 - src.utils.logger - INFO - Connected to Redis
+2024-07-15 11:36:16,772 - src.utils.logger - INFO - Connected to Redis
+2024-07-15 11:36:16,772 - src.utils.logger - INFO - Connected to Redis
+2024-07-15 11:36:18,818 - src.utils.logger - INFO - Redis DB is being flushed

@@ -1,0 +1,1629 @@
+2024-07-02 10:54:44,834 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 10:54:46,872 - src.utils.logger - INFO - Disconnected from MT5 Server
+2024-07-02 10:54:46,873 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 10:55:13,236 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 10:55:15,280 - src.utils.logger - INFO - Disconnected from MT5 Server
+2024-07-02 10:55:15,281 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 11:39:47,218 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 11:39:49,257 - src.utils.logger - INFO - Subscribed to positions
+2024-07-02 11:39:49,257 - src.utils.logger - INFO - Subscribed to positions
+2024-07-02 11:39:49,258 - src.utils.logger - INFO - Disconnected from MT5 Server
+2024-07-02 11:39:49,258 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 11:40:03,244 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 11:40:05,875 - src.utils.logger - INFO - Connected to MT5 Server by manager 1106
+2024-07-02 11:40:06,354 - src.utils.logger - INFO - Connected to MT5 Server by manager 1105
+2024-07-02 11:40:06,359 - src.utils.logger - INFO - Disconnected from MT5 Server
+2024-07-02 11:40:06,359 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:37:43,857 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:37:45,901 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,935 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,938 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,940 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,943 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,945 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,948 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,953 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:37:45,955 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:37:45,956 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:37:47,983 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:38:01,953 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:38:03,987 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:03,995 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,002 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,006 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,012 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,018 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,025 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,028 - src.utils.logger - ERROR - Error hmset_key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:38:04,030 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:38:04,031 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:38:06,046 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:38:53,089 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:39:06,290 - src.utils.logger - ERROR - Error hmset_key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY': Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 57, in hset
+    self.client.hset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5022, in hset
+    return self.execute_command("HSET", name, *pieces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first.
+2024-07-02 15:39:56,844 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:40:01,583 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 20}'
+2024-07-02 15:40:04,955 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 50}'
+2024-07-02 15:40:11,823 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 11}'
+2024-07-02 15:40:11,825 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 6}'
+2024-07-02 15:40:11,826 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 2}'
+2024-07-02 15:40:11,827 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 10}'
+2024-07-02 15:40:11,829 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 2}'
+2024-07-02 15:40:11,830 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 3}'
+2024-07-02 15:40:11,831 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:40:11,834 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:40:13,851 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:43:05,882 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:43:07,926 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 20}'
+2024-07-02 15:43:07,928 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 50}'
+2024-07-02 15:43:07,929 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 11}'
+2024-07-02 15:43:07,929 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 6}'
+2024-07-02 15:43:07,930 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 2}'
+2024-07-02 15:43:07,931 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 10}'
+2024-07-02 15:43:07,931 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 2}'
+2024-07-02 15:43:07,932 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 3}'
+2024-07-02 15:43:07,932 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:43:07,934 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:43:09,977 - src.utils.logger - INFO - Redis DB is being flushed
+2024-07-02 15:43:09,979 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:43:15,126 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:43:17,161 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 20}'
+2024-07-02 15:43:17,163 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 50}'
+2024-07-02 15:43:17,165 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 11}'
+2024-07-02 15:43:17,166 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 6}'
+2024-07-02 15:43:17,168 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 2}'
+2024-07-02 15:43:17,169 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 10}'
+2024-07-02 15:43:17,170 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 2}'
+2024-07-02 15:43:17,171 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 3}'
+2024-07-02 15:43:17,171 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:43:17,172 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:43:19,219 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:45:31,853 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:45:33,902 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:47:36,143 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:47:38,169 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:52:20,438 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:52:22,472 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:54:12,086 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:54:14,121 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:54:40,953 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:54:42,996 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:55:24,650 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:55:26,674 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:55:49,783 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:55:51,822 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:56:37,191 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:56:39,233 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:57:17,310 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:57:19,335 - src.utils.logger - ERROR - Error hmget 'b'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY'': unhashable type: 'set'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 72, in hget_all
+    decoded_data = {{key.decode('utf-8')}: value.decode('utf-8') for key, value in value.items()}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'set'
+2024-07-02 15:57:19,342 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:58:12,605 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:58:14,631 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 15:58:28,222 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 15:58:30,256 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:00:18,082 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:00:20,119 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:00:31,967 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:00:34,003 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:22:34,730 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:22:34,731 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:22:36,760 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 40}'
+2024-07-02 16:22:36,761 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 81}'
+2024-07-02 16:22:36,761 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 32}'
+2024-07-02 16:22:36,762 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 30}'
+2024-07-02 16:22:36,762 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 21}'
+2024-07-02 16:22:36,763 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 73}'
+2024-07-02 16:22:36,763 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 7}'
+2024-07-02 16:22:36,764 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 67}'
+2024-07-02 16:22:36,764 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:22:39,817 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:22:41,843 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 78}'
+2024-07-02 16:22:41,845 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 95}'
+2024-07-02 16:22:41,848 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 22}'
+2024-07-02 16:22:41,850 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 41}'
+2024-07-02 16:22:41,852 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 59}'
+2024-07-02 16:22:41,853 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 32}'
+2024-07-02 16:22:41,854 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 59}'
+2024-07-02 16:22:41,855 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 36}'
+2024-07-02 16:22:41,855 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:22:42,859 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:22:44,873 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 77}'
+2024-07-02 16:22:44,875 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 107}'
+2024-07-02 16:22:44,877 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 67}'
+2024-07-02 16:22:44,879 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 40}'
+2024-07-02 16:22:44,880 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 34}'
+2024-07-02 16:22:44,881 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 98}'
+2024-07-02 16:22:44,882 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 89}'
+2024-07-02 16:22:44,882 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 47}'
+2024-07-02 16:22:44,883 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:22:45,887 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:22:47,929 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 50}'
+2024-07-02 16:22:47,930 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 61}'
+2024-07-02 16:22:47,931 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 43}'
+2024-07-02 16:22:47,931 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 89}'
+2024-07-02 16:22:47,932 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 45}'
+2024-07-02 16:22:47,932 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 23}'
+2024-07-02 16:22:47,933 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 97}'
+2024-07-02 16:22:47,933 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 61}'
+2024-07-02 16:22:47,933 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:22:48,937 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:22:50,965 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 30}'
+2024-07-02 16:22:50,967 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 139}'
+2024-07-02 16:22:50,969 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 28}'
+2024-07-02 16:22:50,971 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 24}'
+2024-07-02 16:22:50,972 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 60}'
+2024-07-02 16:22:50,974 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 43}'
+2024-07-02 16:22:50,976 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 33}'
+2024-07-02 16:22:50,977 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 53}'
+2024-07-02 16:22:50,978 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 16:25:43,253 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 16:25:45,305 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 59}'
+2024-07-02 16:25:45,306 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 84}'
+2024-07-02 16:25:45,307 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 98}'
+2024-07-02 16:25:45,307 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 102}'
+2024-07-02 16:25:45,308 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 102}'
+2024-07-02 16:25:45,309 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 20}'
+2024-07-02 16:25:45,310 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 14}'
+2024-07-02 16:25:45,310 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 78}'
+2024-07-02 16:25:46,314 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 79}'
+2024-07-02 16:25:46,315 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 147}'
+2024-07-02 16:25:46,316 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 108}'
+2024-07-02 16:25:46,317 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 44}'
+2024-07-02 16:25:46,317 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 90}'
+2024-07-02 16:25:46,318 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 83}'
+2024-07-02 16:25:46,318 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 29}'
+2024-07-02 16:25:46,319 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 62}'
+2024-07-02 16:25:47,322 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 99}'
+2024-07-02 16:25:47,324 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 80}'
+2024-07-02 16:25:47,325 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 56}'
+2024-07-02 16:25:47,326 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 19}'
+2024-07-02 16:25:47,327 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 93}'
+2024-07-02 16:25:47,328 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 91}'
+2024-07-02 16:25:47,329 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 70}'
+2024-07-02 16:25:47,330 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 8}'
+2024-07-02 16:25:48,332 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 117}'
+2024-07-02 16:25:48,334 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 91}'
+2024-07-02 16:25:48,336 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 73}'
+2024-07-02 16:25:48,337 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 50}'
+2024-07-02 16:25:48,338 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 36}'
+2024-07-02 16:25:48,339 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 27}'
+2024-07-02 16:25:48,340 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 101}'
+2024-07-02 16:25:48,341 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 25}'
+2024-07-02 16:25:49,346 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 47}'
+2024-07-02 16:25:49,348 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 107}'
+2024-07-02 16:25:49,350 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 26}'
+2024-07-02 16:25:49,352 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 82}'
+2024-07-02 16:25:49,353 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 3}'
+2024-07-02 16:25:49,355 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 106}'
+2024-07-02 16:25:49,355 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 54}'
+2024-07-02 16:25:49,356 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 97}'
+2024-07-02 16:25:50,359 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 57}'
+2024-07-02 16:25:50,362 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 77}'
+2024-07-02 16:25:50,363 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 77}'
+2024-07-02 16:25:50,365 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 59}'
+2024-07-02 16:25:50,366 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 62}'
+2024-07-02 16:25:50,367 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 12}'
+2024-07-02 16:25:50,368 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 47}'
+2024-07-02 16:25:50,369 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 74}'
+2024-07-02 16:25:51,374 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 67}'
+2024-07-02 16:25:51,376 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 81}'
+2024-07-02 16:25:51,377 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 49}'
+2024-07-02 16:25:51,378 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 88}'
+2024-07-02 16:25:51,379 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 34}'
+2024-07-02 16:25:51,380 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 22}'
+2024-07-02 16:25:51,381 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 61}'
+2024-07-02 16:25:51,382 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 81}'
+2024-07-02 16:25:52,386 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 88}'
+2024-07-02 16:25:52,388 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 82}'
+2024-07-02 16:25:52,391 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 105}'
+2024-07-02 16:25:52,393 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 41}'
+2024-07-02 16:25:52,395 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 12}'
+2024-07-02 16:25:52,397 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 51}'
+2024-07-02 16:25:52,398 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 42}'
+2024-07-02 16:25:52,399 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 21}'
+2024-07-02 16:25:53,406 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 74}'
+2024-07-02 16:25:53,409 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 52}'
+2024-07-02 16:25:53,411 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 73}'
+2024-07-02 16:25:53,413 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 42}'
+2024-07-02 16:25:53,414 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 17}'
+2024-07-02 16:25:53,416 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 109}'
+2024-07-02 16:25:53,417 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 76}'
+2024-07-02 16:25:53,418 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 60}'
+2024-07-02 16:25:54,422 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 29}'
+2024-07-02 16:25:54,424 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 125}'
+2024-07-02 16:25:54,426 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 56}'
+2024-07-02 16:25:54,428 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 60}'
+2024-07-02 16:25:54,429 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 67}'
+2024-07-02 16:25:54,429 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 96}'
+2024-07-02 16:25:54,430 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 64}'
+2024-07-02 16:25:54,430 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 102}'
+2024-07-02 16:25:55,434 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 64}'
+2024-07-02 16:25:55,436 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 103}'
+2024-07-02 16:25:55,437 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 32}'
+2024-07-02 16:25:55,438 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 81}'
+2024-07-02 16:25:55,438 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 24}'
+2024-07-02 16:25:55,438 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 11}'
+2024-07-02 16:25:55,439 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 86}'
+2024-07-02 16:25:55,440 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 54}'
+2024-07-02 16:25:56,445 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 48}'
+2024-07-02 16:25:56,447 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 89}'
+2024-07-02 16:25:56,449 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 45}'
+2024-07-02 16:25:56,451 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 60}'
+2024-07-02 16:25:56,453 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 91}'
+2024-07-02 16:25:56,454 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 16}'
+2024-07-02 16:25:56,455 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 96}'
+2024-07-02 16:25:56,456 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 62}'
+2024-07-02 16:25:57,460 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 26}'
+2024-07-02 16:25:57,462 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 141}'
+2024-07-02 16:25:57,464 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 84}'
+2024-07-02 16:25:57,466 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 32}'
+2024-07-02 16:25:57,468 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 33}'
+2024-07-02 16:25:57,470 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 32}'
+2024-07-02 16:25:57,471 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 88}'
+2024-07-02 16:25:57,473 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 88}'
+2024-07-02 16:25:58,477 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 109}'
+2024-07-02 16:25:58,480 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 144}'
+2024-07-02 16:25:58,482 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 104}'
+2024-07-02 16:25:58,484 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 58}'
+2024-07-02 16:25:58,487 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 70}'
+2024-07-02 16:25:58,488 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 27}'
+2024-07-02 16:25:58,490 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 93}'
+2024-07-02 16:25:58,491 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 34}'
+2024-07-02 16:25:59,498 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 68}'
+2024-07-02 16:25:59,500 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 142}'
+2024-07-02 16:25:59,502 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 39}'
+2024-07-02 16:25:59,504 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 32}'
+2024-07-02 16:25:59,506 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 47}'
+2024-07-02 16:25:59,508 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 13}'
+2024-07-02 16:25:59,509 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 50}'
+2024-07-02 16:25:59,510 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 54}'
+2024-07-02 16:26:00,513 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 77}'
+2024-07-02 16:26:00,516 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 83}'
+2024-07-02 16:26:00,518 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 57}'
+2024-07-02 16:26:00,519 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 74}'
+2024-07-02 16:26:00,521 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 84}'
+2024-07-02 16:26:00,523 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 80}'
+2024-07-02 16:26:00,525 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 32}'
+2024-07-02 16:26:00,526 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 60}'
+2024-07-02 16:26:01,531 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 112}'
+2024-07-02 16:26:01,534 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 66}'
+2024-07-02 16:26:01,535 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 86}'
+2024-07-02 16:26:01,536 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 50}'
+2024-07-02 16:26:01,537 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 41}'
+2024-07-02 16:26:01,539 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 33}'
+2024-07-02 16:26:01,541 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 98}'
+2024-07-02 16:26:01,542 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 93}'
+2024-07-02 16:26:02,547 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 80}'
+2024-07-02 16:26:02,549 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 61}'
+2024-07-02 16:26:02,551 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 29}'
+2024-07-02 16:26:02,553 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 70}'
+2024-07-02 16:26:02,555 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 34}'
+2024-07-02 16:26:02,555 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 29}'
+2024-07-02 16:26:02,556 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 84}'
+2024-07-02 16:26:02,556 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 39}'
+2024-07-02 16:26:03,560 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 79}'
+2024-07-02 16:26:03,562 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 122}'
+2024-07-02 16:26:03,564 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 31}'
+2024-07-02 16:26:03,565 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 39}'
+2024-07-02 16:26:03,565 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 61}'
+2024-07-02 16:26:03,566 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 91}'
+2024-07-02 16:26:03,566 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 97}'
+2024-07-02 16:26:03,567 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 41}'
+2024-07-02 16:26:04,571 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 49}'
+2024-07-02 16:26:04,574 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 87}'
+2024-07-02 16:26:04,575 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 32}'
+2024-07-02 16:26:04,577 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 102}'
+2024-07-02 16:26:04,579 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 83}'
+2024-07-02 16:26:04,581 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 73}'
+2024-07-02 16:26:04,582 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 85}'
+2024-07-02 16:26:04,583 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 73}'
+2024-07-02 16:26:05,587 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 38}'
+2024-07-02 16:26:05,589 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 55}'
+2024-07-02 16:26:05,591 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 64}'
+2024-07-02 16:26:05,593 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 90}'
+2024-07-02 16:26:05,595 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 35}'
+2024-07-02 16:26:05,596 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 14}'
+2024-07-02 16:26:05,597 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 78}'
+2024-07-02 16:26:05,598 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 17}'
+2024-07-02 16:26:06,602 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 63}'
+2024-07-02 16:26:06,605 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 121}'
+2024-07-02 16:26:06,607 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 80}'
+2024-07-02 16:26:06,610 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 67}'
+2024-07-02 16:26:06,612 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 99}'
+2024-07-02 16:26:06,614 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 27}'
+2024-07-02 16:26:06,615 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 36}'
+2024-07-02 16:26:06,616 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 16}'
+2024-07-02 16:26:07,621 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 41}'
+2024-07-02 16:26:07,623 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 146}'
+2024-07-02 16:26:07,624 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 109}'
+2024-07-02 16:26:07,625 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 67}'
+2024-07-02 16:26:07,625 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 14}'
+2024-07-02 16:26:07,626 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 36}'
+2024-07-02 16:26:07,627 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 86}'
+2024-07-02 16:26:07,627 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 45}'
+2024-07-02 16:26:08,631 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 37}'
+2024-07-02 16:26:08,632 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 92}'
+2024-07-02 16:26:08,633 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 36}'
+2024-07-02 16:26:08,633 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 94}'
+2024-07-02 16:26:08,634 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 64}'
+2024-07-02 16:26:08,634 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 61}'
+2024-07-02 16:26:08,635 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 4}'
+2024-07-02 16:26:08,635 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 37}'
+2024-07-02 17:22:00,842 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 17:22:02,878 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 68}'
+2024-07-02 17:22:02,926 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 118}'
+2024-07-02 17:22:02,926 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 58}'
+2024-07-02 17:22:02,926 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 43}'
+2024-07-02 17:22:02,927 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 34}'
+2024-07-02 17:22:02,927 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 11}'
+2024-07-02 17:22:02,928 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 69}'
+2024-07-02 17:22:02,928 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 51}'
+2024-07-02 17:22:03,932 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 37}'
+2024-07-02 17:22:03,933 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 59}'
+2024-07-02 17:22:03,934 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 100}'
+2024-07-02 17:22:03,936 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 96}'
+2024-07-02 17:22:03,936 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 32}'
+2024-07-02 17:22:03,937 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 99}'
+2024-07-02 17:22:03,937 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 39}'
+2024-07-02 17:22:03,938 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 66}'
+2024-07-02 17:22:04,940 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 110}'
+2024-07-02 17:22:04,942 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 71}'
+2024-07-02 17:22:04,943 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 84}'
+2024-07-02 17:22:04,944 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 55}'
+2024-07-02 17:22:04,945 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 86}'
+2024-07-02 17:22:04,945 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 31}'
+2024-07-02 17:22:04,946 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 8}'
+2024-07-02 17:22:04,947 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 92}'
+2024-07-02 17:22:05,950 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 50}'
+2024-07-02 17:22:05,952 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 66}'
+2024-07-02 17:22:05,955 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 44}'
+2024-07-02 17:22:05,957 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 32}'
+2024-07-02 17:22:05,958 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 9}'
+2024-07-02 17:22:05,959 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 30}'
+2024-07-02 17:22:05,961 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 5}'
+2024-07-02 17:22:05,962 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 68}'
+2024-07-02 17:22:06,965 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 33}'
+2024-07-02 17:22:06,967 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 110}'
+2024-07-02 17:22:06,968 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 59}'
+2024-07-02 17:22:06,968 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 42}'
+2024-07-02 17:22:06,969 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 42}'
+2024-07-02 17:22:06,969 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 76}'
+2024-07-02 17:22:06,970 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 15}'
+2024-07-02 17:22:06,970 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 95}'
+2024-07-02 17:22:07,972 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 38}'
+2024-07-02 17:22:07,973 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 54}'
+2024-07-02 17:22:07,974 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 48}'
+2024-07-02 17:22:07,974 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 30}'
+2024-07-02 17:22:07,975 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 73}'
+2024-07-02 17:22:07,975 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 61}'
+2024-07-02 17:22:07,976 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 48}'
+2024-07-02 17:22:07,976 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 45}'
+2024-07-02 17:27:38,110 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 17:27:40,142 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 56}'
+2024-07-02 17:31:02,452 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 17:31:04,493 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 23}'
+2024-07-02 17:31:06,821 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 78}'
+2024-07-02 17:31:08,248 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 35}'
+2024-07-02 17:31:09,582 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 29}'
+2024-07-02 17:45:18,358 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 17:45:20,428 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 88}'
+2024-07-02 17:45:20,438 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 101}'
+2024-07-02 17:45:20,442 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 26}'
+2024-07-02 17:45:20,445 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 26}'
+2024-07-02 17:45:20,449 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 63}'
+2024-07-02 17:45:20,468 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 35}'
+2024-07-02 17:45:20,478 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 19}'
+2024-07-02 17:45:20,479 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 78}'
+2024-07-02 17:45:23,517 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 58}'
+2024-07-02 17:45:23,536 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 87}'
+2024-07-02 17:45:23,543 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 73}'
+2024-07-02 17:45:23,548 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 65}'
+2024-07-02 17:45:23,550 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 56}'
+2024-07-02 17:45:23,562 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 60}'
+2024-07-02 17:45:23,565 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 83}'
+2024-07-02 17:45:23,567 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 13}'
+2024-07-02 17:45:26,601 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 62}'
+2024-07-02 17:45:26,617 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 134}'
+2024-07-02 17:45:26,621 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 89}'
+2024-07-02 17:45:26,630 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 35}'
+2024-07-02 17:45:26,632 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 97}'
+2024-07-02 17:45:26,639 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 62}'
+2024-07-02 17:45:26,642 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 78}'
+2024-07-02 17:45:26,649 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 91}'
+2024-07-02 17:45:45,494 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 17:45:47,538 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 106}'
+2024-07-02 17:45:47,546 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 57}'
+2024-07-02 17:45:47,547 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 101}'
+2024-07-02 17:45:47,551 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 82}'
+2024-07-02 17:45:47,554 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 46}'
+2024-07-02 17:45:47,563 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 29}'
+2024-07-02 17:45:47,567 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 85}'
+2024-07-02 17:45:47,581 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 8}'
+2024-07-02 17:45:50,616 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 47}'
+2024-07-02 17:45:50,617 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 65}'
+2024-07-02 17:45:50,618 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 62}'
+2024-07-02 17:45:50,619 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 91}'
+2024-07-02 17:45:50,630 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 4}'
+2024-07-02 17:45:50,633 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 81}'
+2024-07-02 17:45:50,641 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 69}'
+2024-07-02 17:45:50,646 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 103}'
+2024-07-02 17:45:53,680 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 106}'
+2024-07-02 17:45:53,684 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 125}'
+2024-07-02 17:45:53,694 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 85}'
+2024-07-02 17:45:53,707 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 42}'
+2024-07-02 17:45:53,710 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 74}'
+2024-07-02 17:45:53,714 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 37}'
+2024-07-02 17:45:53,717 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 19}'
+2024-07-02 17:45:53,730 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 35}'
+2024-07-02 17:45:56,763 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 107}'
+2024-07-02 17:45:56,768 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 65}'
+2024-07-02 17:45:56,782 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 94}'
+2024-07-02 17:45:56,797 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 85}'
+2024-07-02 17:45:56,798 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 30}'
+2024-07-02 17:45:56,803 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 110}'
+2024-07-02 17:45:56,808 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 10}'
+2024-07-02 17:45:56,809 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 33}'
+2024-07-02 17:45:59,834 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 105}'
+2024-07-02 17:45:59,848 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 78}'
+2024-07-02 17:45:59,850 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 82}'
+2024-07-02 17:45:59,866 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 62}'
+2024-07-02 17:45:59,869 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 43}'
+2024-07-02 17:45:59,878 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 45}'
+2024-07-02 17:45:59,880 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 21}'
+2024-07-02 17:45:59,881 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 35}'
+2024-07-02 17:46:02,898 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 53}'
+2024-07-02 17:46:02,908 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 145}'
+2024-07-02 17:46:02,914 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 80}'
+2024-07-02 17:46:02,918 - src.utils.logger - INFO - Key 'test sheet 1:90:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 33}'
+2024-07-02 17:46:02,928 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:BUY' set to '{'value': 40}'
+2024-07-02 17:46:02,933 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.v:XAUUSD:SELL' set to '{'value': 90}'
+2024-07-02 17:46:02,943 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:BUY' set to '{'value': 94}'
+2024-07-02 17:46:02,947 - src.utils.logger - INFO - Key 'test sheet 2:91:1:1105:5:XAUUSD.z:XAUUSD:SELL' set to '{'value': 42}'
+2024-07-02 20:23:09,869 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 20:23:11,911 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,001 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,009 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,020 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,034 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,044 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,049 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:12,065 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,080 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,093 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,101 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,111 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,119 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,125 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,133 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:15,143 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,163 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,176 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,185 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,192 - src.utils.logger - ERROR - Error hmset_key '90:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,203 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,211 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,232 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:23:18,238 - src.utils.logger - ERROR - Error hmset_key '91:1:1105:5': Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\MK\Projects\ServiceApi\src\services\redisService.py", line 48, in hmset
+    self.client.hmset(key, value)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\commands\core.py", line 5051, in hmset
+    return self.execute_command("HMSET", name, *items)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 545, in execute_command
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 546, in <lambda>
+    lambda: self._send_command_parse_response(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\client.py", line 521, in _send_command_parse_response
+    conn.send_command(*args)
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 477, in send_command
+    self._command_packer.pack(*args),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "c:\Users\User\Desktop\MK\Projects\ServiceApi\myenv\Lib\site-packages\redis\_parsers\encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+2024-07-02 20:40:54,571 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 20:43:59,921 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 20:51:49,765 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 20:54:45,610 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 20:55:49,540 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 21:14:42,809 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 21:26:05,483 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 21:30:45,438 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 21:32:07,522 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:16:16,525 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:17:16,188 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:17:16,188 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:17:33,612 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:17:33,612 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:17:52,124 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:17:53,818 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:18:13,711 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:18:13,712 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:29:19,017 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:29:42,733 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:30:16,400 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:30:43,652 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:31:09,474 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:31:27,627 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:31:45,763 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:32:31,631 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:33:27,926 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:33:27,926 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:33:34,828 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:33:35,998 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:43:58,881 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:43:58,881 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:44:45,512 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:44:45,513 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:45:02,731 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:45:02,732 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:45:06,784 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:46:06,012 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:46:06,013 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:46:29,371 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:46:29,371 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:47:04,364 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:47:04,365 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:47:19,699 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:47:19,700 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:47:48,616 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:47:48,616 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:48:10,913 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:48:10,915 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:48:32,635 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:48:32,636 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:49:11,642 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:49:11,643 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:49:31,842 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:49:31,843 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:51:11,247 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:51:11,249 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:51:40,326 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:51:40,328 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:54:29,032 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:54:29,033 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:56:36,028 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:56:36,029 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:01,809 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:01,810 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:31,335 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:31,337 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:35,399 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:57:47,676 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:47,677 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:57:51,736 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:58:09,037 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:58:09,039 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:58:13,111 - src.utils.logger - INFO - Disconnected from Redis
+2024-07-02 22:58:30,676 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 22:58:30,677 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:03:43,208 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:03:43,209 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:08:52,220 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:08:52,221 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:12:33,307 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:12:33,308 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:14:27,833 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:14:27,833 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:16:50,500 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:16:50,501 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:17:24,738 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:17:24,739 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:17:49,783 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:17:49,785 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:19:46,637 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:19:46,638 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:20:40,315 - src.utils.logger - INFO - Connected to Redis
+2024-07-02 23:20:40,316 - src.utils.logger - INFO - Connected to Redis

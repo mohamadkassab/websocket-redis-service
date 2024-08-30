@@ -1,0 +1,396 @@
+[
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+    ,
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+
+
+
+    ,
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+
+
+    ,
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "sheet new 2",
+        "sheet_id": 94,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+    ,
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "XAUUSD.v",
+        "main_symbol" : "XAUUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+
+
+
+    ,
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1106,
+        "manager_id": 24,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+
+
+    ,
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "buy",
+        "value" : 20
+    },
+    {
+        "sheet_name": "testing sheet",
+        "sheet_id": 98,
+        "server_id" : 1,
+        "login" : 1105,
+        "manager_id": 19,
+        "symbol_suffix" : "EURUSD.e",
+        "main_symbol" : "EURUSD",
+        "type" : "sell",
+        "value" : 50
+    }
+
+
+]
